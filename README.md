@@ -37,7 +37,7 @@ Open starter repo in another VSC window
 Install dependencies
 
 ```bash
-  npm install
+  npm i
 ```
 
 Start the server
