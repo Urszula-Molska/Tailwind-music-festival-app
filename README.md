@@ -43,5 +43,5 @@ Install dependencies
 Start the server
 
 ```bash
-  npm tw:build
+  npm run tw:build
 ```
