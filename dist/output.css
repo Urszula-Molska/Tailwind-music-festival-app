@@ -783,8 +783,16 @@ html {
   padding-right: 1rem;
 }
 
+.text-center{
+  text-align: center;
+}
+
 .text-right{
   text-align: right;
+}
+
+.text-justify{
+  text-align: justify;
 }
 
 .text-2xl{
@@ -877,20 +885,12 @@ html {
   }
 }
 
-.marker\:bg-gradient-to-r *::marker{
-  background-image: linear-gradient(to right, var(--tw-gradient-stops));
-}
-
-.marker\:bg-gradient-to-r::marker{
-  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+.hover\:bg-white\/10:hover{
+  background-color: rgb(255 255 255 / 0.1);
 }
 
 .hover\:bg-white\/5:hover{
   background-color: rgb(255 255 255 / 0.05);
-}
-
-.hover\:bg-white\/10:hover{
-  background-color: rgb(255 255 255 / 0.1);
 }
 
 .hover\:text-zinc-200:hover{
