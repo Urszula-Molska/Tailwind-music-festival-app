@@ -620,6 +620,14 @@ html {
   top: 0px;
 }
 
+.top-\[62px\]{
+  top: 62px;
+}
+
+.left-0{
+  left: 0px;
+}
+
 .top-full{
   top: 100%;
 }
@@ -661,8 +669,16 @@ html {
   height: 0.25rem;
 }
 
+.h-full{
+  height: 100%;
+}
+
 .w-8{
   width: 2rem;
+}
+
+.w-full{
+  width: 100%;
 }
 
 .flex-1{
@@ -701,6 +717,10 @@ html {
 
 .justify-end{
   justify-content: flex-end;
+}
+
+.justify-center{
+  justify-content: center;
 }
 
 .gap-2{
@@ -857,8 +877,20 @@ html {
   }
 }
 
+.marker\:bg-gradient-to-r *::marker{
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+}
+
+.marker\:bg-gradient-to-r::marker{
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+}
+
 .hover\:bg-white\/5:hover{
   background-color: rgb(255 255 255 / 0.05);
+}
+
+.hover\:bg-white\/10:hover{
+  background-color: rgb(255 255 255 / 0.1);
 }
 
 .hover\:text-zinc-200:hover{
@@ -890,6 +922,10 @@ html {
 
 .group.open .group-open\:opacity-0{
   opacity: 0;
+}
+
+.peer.open ~ .peer-open\:block{
+  display: block;
 }
 
 @media (min-width: 768px){

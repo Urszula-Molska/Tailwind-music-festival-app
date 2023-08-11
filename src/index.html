@@ -20,8 +20,7 @@
     <main>
       <header class="text-zinc-200">
         <nav
-          class="sticky top-0 flex bg-gradient-to-r from-rose-500 to-pink-500"
-        >
+          class="sticky top-0 flex bg-gradient-to-r from-rose-500 to-pink-500">
           <div class="flex items-center gap-2 p-2">
             <img src="assets/images/logo-inverted.png" width="50" />
             <div class="text-2xl font-bold">
@@ -29,12 +28,25 @@
             </div>
           </div>
           <div class="block md:hidden ml-auto pr-4 my-auto cursor-pointer">
-            <div id="mobile-menu-button" class="group">
-            <div class="group-open:rotate-45 group-open:top-2 relative bg-zinc-200 rounded-full w-8 h-1 transition-all"></div>
-            <div class="bg-zinc-200 rounded-full w-8 h-1 mt-1 group-open:opacity-0 opacity-100 transition-all"></div>
-            <div class="group-open:-rotate-45 group-open:-top-2 relative bg-zinc-200 rounded-full w-8 h-1 mt-1 transition-all"></div>
+            <div id="mobile-menu-button" class="group peer">
+              <div class="group-open:rotate-45 group-open:top-2 relative bg-zinc-200 rounded-full w-8 h-1 transition-all"></div>
+              <div class="bg-zinc-200 rounded-full w-8 h-1 mt-1 group-open:opacity-0 opacity-100 transition-all"></div>
+              <div class="group-open:-rotate-45 group-open:-top-2 relative bg-zinc-200 rounded-full w-8 h-1 mt-1 transition-all"></div>
+            </div>
+          <div class="absolute w-full top-[62px] left-0 bg-gradient-to-r from-rose-500 to-pink-500 peer-open:block hidden">
+          <div>
+            <span class="relative flex h-full cursor-pointer items-center justify-center p-4 font-bold text-pink-200 hover:text-zinc-200 transition-colors hover:bg-white/10">Home</span>
           </div>
-          <div class="md:flex hidden flex-1 items-center justify-end">
+          <div>
+            <span class="relative flex h-full cursor-pointer items-center justify-center p-4 font-bold text-pink-200 hover:text-zinc-200 transition-colors hover:bg-white/10">Lineup</span>
+          </div>
+          <div>
+            <span class="relative flex h-full cursor-pointer items-center justify-center p-4 font-bold text-pink-200 hover:text-zinc-200 transition-colors hover:bg-white/10">Tickets</span>
+          </div>
+          <div><span class="relative flex h-full cursor-pointer items-center justify-center p-4 font-bold text-pink-200 hover:text-zinc-200 transition-colors hover:bg-white/10">Supports</span>
+          </div> 
+          </div>
+          <div class="hidden flex-1 items-center justify-end md:flex">
             <div class="menu-item">
               <span>HOME</span>
             </div>
