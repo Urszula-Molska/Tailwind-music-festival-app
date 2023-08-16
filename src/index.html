@@ -13,7 +13,19 @@
           if (mobileMenuIcon.classList.contains("open")){
             mobileMenuIcon.classList.remove("open");}
             else {mobileMenuIcon.classList.add ("open")}
-          })}
+          });
+
+          const ticketsMenuItem = document.getElementById("ticket-menu-item");
+        ticketsMenuItem.addEventListener("click", () => {
+          
+          if (ticketsMenuItem.classList.contains("open")){
+            console.log("delete class open")
+            ticketsMenuItem.classList.remove("open");}
+            else {
+              console.log("adding class open");
+              ticketsMenuItem.classList.add ("open")}
+          });
+      };
     </script>
   </head>
   <body>
@@ -40,11 +52,9 @@
           <div class="relative flex h-full cursor-pointer items-center justify-center p-4 font-bold text-pink-200 hover:text-zinc-200 transition-colors hover:bg-white/10">
             <span>Lineup</span>
           </div>
-          <div class="group relative h-full cursor-pointer p-4 text-pink-200 hover:text-zinc-200 transition-colors hover:bg-white/10">
-             <div class="p-4 text-center font-bold">
-              Tickets
-              </div>
-            <div>
+          <div id="ticket-menu-item" class="group relative h-full cursor-pointer p-4 text-pink-200 hover:text-zinc-200 transition-colors hover:bg-white/10">
+             <div class="p-4 text-center font-bold">Tickets</div>
+            <div class="hidden group-open:block">
               <div class="p-4 text-center relative text-pink-200 hover:text-zinc-200 hover:bg-white/5 transition-colors ease-in-out">
                 <span>Single day ticket</span>
               </div>
