@@ -6,7 +6,7 @@
 
 ## Tech Stack
 
-**Client:** React, Tailwind
+CSS, HTML, Tailwind
 
 ## Demo
 
