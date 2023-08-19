@@ -33,19 +33,34 @@
           nextButton.addEventListener("click", ()=> {
           const itemWidth= carousel.getElementsByTagName("div")[0].clientWidth;
           carousel.scrollLeft = carousel.scrollLeft + itemWidth;
-          } )
+          });
+
           previousButton.addEventListener("click", ()=> {
           const itemWidth= carousel.getElementsByTagName("div")[0].clientWidth;
           carousel.scrollLeft = carousel.scrollLeft - itemWidth;
-          } )
+          });
+
+        const darkModeToggle = document.getElementById("dark-mode-toggle");
+        darkModeToggle.addEventListener("click", () => {
+          if (document.body.classList.contains("dark")){
+            document.body.classList.remove("dark");}
+            else {
+              document.body.classList.add ("dark")}
+          });
+
       };
     </script>
   </head>
-  <body>
-    <main>
+  <body class="dark">
+    <main class="bg-zinc-200 dark:bg-zinc-900">
       <header class="text-zinc-200">
+        <div id="dark-mode-toggle" class="fixed top-24 right-0 inline-block w-12 cursor-pointer rounded-l-lg bg-zinc-900 dark:bg-zinc-200 dark:text-zinc-900 p-2 text-3xl ">
+          <i class="fa-solid fa-sun dark:hidden"></i>
+          <i class="fa-solid fa-moon hidden dark:inline"></i>
+
+        </div>
         <nav
-          class="sticky top-0 flex bg-gradient-to-r from-rose-500 to-pink-500">
+          class="sticky z-10 top-0 flex bg-gradient-to-r from-rose-500 to-pink-500">
           <div class="flex items-center gap-2 p-2">
             <img src="assets/images/logo-inverted.png" width="50" />
             <div class="text-2xl font-bold">
@@ -120,10 +135,7 @@
                 <div class="h-3 w-1 bg-pink-200 rounded-full animate-wavey animation-delay-300"></div>
                 <div class="h-2 w-1 bg-pink-300 rounded-full animate-wavey animation-delay-[75ms]"></div>
               </div>
-
             </div>
-
-
           </div>
           <div class="text-5xl font-bold">tw: <span class="text-sky-900">mf</span>
           </div>
@@ -142,7 +154,7 @@
         </div>
         </div> 
       </header>
-      <div class="max-w-screen-lg mx-auto mt-20">
+      <div class="max-w-screen-lg mx-auto mt-20 text-zinc-900 dark:text-zinc-200">
         <h2>headliners</h2>
         <p>
           Experience the sonic delight from these made-up artists across 7 days 
@@ -206,6 +218,37 @@
           <div id="next" class="position-relative -top-8 text-5xl flex justify-center 
           items-center cursor-pointer"> <i class="fas fa-angle-right"></i>
           </div>
+          </div>
+          <h2 class="mt-20">
+            Tickets
+          </h2>
+          <table class="mt-5 table w-full border-zinc-500 border-collapse">
+            <thead class="text-lg font-bold">
+              <td class="border border-zinc-500 p-3">Tickets</td>
+              <td class="border border-zinc-500 p-3">Price</td>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="border border-zinc-500 py-2 px-3">
+                  Single day ticket
+                </td>
+                <td class="border border-zinc-500 py-2 px-3">
+                  $30
+                </td>
+              </tr>
+              <tr>
+                <td class="border border-zinc-500 py-2 px-3">
+                  7 day ticket
+                </td>
+                <td class="border border-zinc-500 py-2 px-3">
+                  $100
+                </td>
+              </tr>
+            </tbody>
+            <caption class="caption-bottom">
+              Once they're gone, they're gone
+            </caption>
+          </table>
         </div>
     </main>
   </body>
