@@ -1,7 +1,5 @@
 # tailwind-starter-course
 
-You can find the backend for this app in this [REPO (will be added later)](link)
-
 ## Authors
 
 [Urszula Molska](https://github.com/Urszula-Molska) (Developer)
