@@ -10,7 +10,7 @@
 
 ## Demo
 
-[https://music-festival-tailwind.netlify.app/] (link)
+[LINK] https://music-festival-tailwind.netlify.app/ (link)
 
 ## Run Locally
 
