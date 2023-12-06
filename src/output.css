@@ -1130,6 +1130,11 @@ h6{
   padding-right: 1rem;
 }
 
+.px-5{
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
 .py-4{
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -1147,6 +1152,10 @@ h6{
 
 .pr-4{
   padding-right: 1rem;
+}
+
+.pb-20{
+  padding-bottom: 5rem;
 }
 
 .pb-5{
